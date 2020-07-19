@@ -1,0 +1,1 @@
+Para executar basta abrir o arquivo index.html e utilizar em um navegador de sua preferência!

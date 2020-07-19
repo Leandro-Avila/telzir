@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Telzir Planos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='js/main.js'></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<header class="text-center">
+    <img src="img/TelzirHeader.png" class="img-fluid">
+</header>
+<body style="background-color:#fff2d0;">
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="col">
+                    <label for="origin">Coloque a origem: </label>
+                    <select class="form-control form-control-lg" id="origin">
+                        <option>11</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                    </select></br>
+                </div>
+                <div class="col">
+                    <label for="destination">Coloque o destino: </label>
+                    <select class="form-control form-control-lg" id="destination">
+                        <option>11</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                    </select></br>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="plan">Selecione o plano: </label>
+                <select class="form-control form-control-lg" id="plan">
+                    <option value=30>Fale mais 30</option>
+                    <option value=60>Fale mais 60</option>
+                    <option value=120>Fale mais 120</option>
+                </select></br>
+                <label for="time">Coloque o tempo da ligação (em minutos): </label>
+                <input class="form-control" type="number" id="time" min="0"></br>
+                <button type="button" class="btn btn-primary" onclick="taxSelection()" id="Enviar">Enviar</button>
+            </div>
+        </form>
+    </div>    
+</body>
+<footer class="container">
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>Origem</th>
+                <th>Destino</th>
+                <th>Tempo</th>
+                <th>Plano</th>
+                <th>Com FaleMais</th>
+                <th>Sem FaleMais</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="chosenOrigin" value="0"></td>
+                <td id="chosenDestination"></td>
+                <td id="chosenTime"></td>
+                <td id="chosenPlan"></td>
+                <td id="withFaleMais"></td>
+                <td id="withoutFaleMais"></td>
+            </tr>
+        </tbody>
+    </table>
+</footer>
+</html>
